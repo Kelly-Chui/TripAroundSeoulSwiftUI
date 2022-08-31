@@ -23,7 +23,7 @@ struct MainMapView: View {
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $region, interactionModes: [.zoom], showsUserLocation: true, annotationItems: annotations) { annotation in
+            Map(coordinateRegion: $region, interactionModes: [], showsUserLocation: true, annotationItems: annotations) { annotation in
                 MapAnnotation(coordinate: annotation.coordinate) {
                     Image(annotation.name)
                         .resizable()
