@@ -10,6 +10,7 @@
 		CF11A43428BF9D0800E34294 /* Landmarks.json in Resources */ = {isa = PBXBuildFile; fileRef = CF11A43328BF9D0800E34294 /* Landmarks.json */; };
 		CF11A43628BF9D2E00E34294 /* LandmarkAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11A43528BF9D2E00E34294 /* LandmarkAnnotation.swift */; };
 		CF11A43828BFA3B900E34294 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11A43728BFA3B900E34294 /* Landmark.swift */; };
+		CF11A43A28BFCCF200E34294 /* MainLandMarkTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11A43928BFCCF200E34294 /* MainLandMarkTable.swift */; };
 		CF17F7E128BDB621003F702B /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF17F7E028BDB621003F702B /* MainMapView.swift */; };
 		CF17F7E528BEE08B003F702B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF17F7E428BEE08B003F702B /* LocationManager.swift */; };
 		CFF8FAC728BD95C40006005C /* TripAroundSeoulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8FAC628BD95C40006005C /* TripAroundSeoulApp.swift */; };
@@ -22,6 +23,7 @@
 		CF11A43328BF9D0800E34294 /* Landmarks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Landmarks.json; path = TripAroundSeoul/Landmarks.json; sourceTree = SOURCE_ROOT; };
 		CF11A43528BF9D2E00E34294 /* LandmarkAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkAnnotation.swift; sourceTree = "<group>"; };
 		CF11A43728BFA3B900E34294 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		CF11A43928BFCCF200E34294 /* MainLandMarkTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLandMarkTable.swift; sourceTree = "<group>"; };
 		CF17F7E028BDB621003F702B /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
 		CF17F7E428BEE08B003F702B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		CFF8FAC328BD95C40006005C /* TripAroundSeoul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripAroundSeoul.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,7 @@
 			children = (
 				CFF8FAC828BD95C40006005C /* MainView.swift */,
 				CF17F7E028BDB621003F702B /* MainMapView.swift */,
+				CF11A43928BFCCF200E34294 /* MainLandMarkTable.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				CF17F7E528BEE08B003F702B /* LocationManager.swift in Sources */,
 				CF17F7E128BDB621003F702B /* MainMapView.swift in Sources */,
 				CF11A43628BF9D2E00E34294 /* LandmarkAnnotation.swift in Sources */,
+				CF11A43A28BFCCF200E34294 /* MainLandMarkTable.swift in Sources */,
 				CFF8FAC928BD95C40006005C /* MainView.swift in Sources */,
 				CFF8FAC728BD95C40006005C /* TripAroundSeoulApp.swift in Sources */,
 				CF11A43828BFA3B900E34294 /* Landmark.swift in Sources */,
