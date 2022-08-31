@@ -22,8 +22,11 @@ struct MainMapView: View {
                 HStack {
                     Spacer()
                     if let location = locationManager.userLocation {
-                        Text("Your location: \(location.latitude), \(location.longitude)")
-                            .padding([.top, .trailing])
+                        if location.latitude >=  37.43 && location.latitude <= 37.7 && location.longitude >= 126.735 && location.longitude <= 127.18 {
+                            Text("Maybe you are currently in Seoul")
+                        } else {
+                            Text("Maybe you are not currently in Seoul.")
+                        }
                     }
                 }
                 Spacer()
@@ -37,8 +40,3 @@ struct MainTopView_Previews: PreviewProvider {
         MainMapView()
     }
 }
-
-//최동 37.5552511
-//최서 126.9779692
-//최남
-//최북
