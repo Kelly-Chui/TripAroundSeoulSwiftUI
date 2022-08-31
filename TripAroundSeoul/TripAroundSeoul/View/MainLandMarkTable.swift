@@ -44,6 +44,7 @@ struct MainBlockView: View {
                     .frame(width: 20, height: 20)
             }
         }
+        .padding([.leading, .trailing, .top])
     }
 }
 
