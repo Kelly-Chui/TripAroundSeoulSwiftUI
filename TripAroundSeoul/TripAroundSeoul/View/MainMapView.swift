@@ -23,9 +23,9 @@ struct MainMapView: View {
                     Spacer()
                     if let location = locationManager.userLocation {
                         if location.latitude >=  37.43 && location.latitude <= 37.7 && location.longitude >= 126.735 && location.longitude <= 127.18 {
-                            Text("Maybe you are currently in Seoul")
+                            Text("you are currently in Seoul")
                         } else {
-                            Text("Maybe you are not currently in Seoul.")
+                            Text("you are not currently in Seoul.")
                         }
                     }
                 }
