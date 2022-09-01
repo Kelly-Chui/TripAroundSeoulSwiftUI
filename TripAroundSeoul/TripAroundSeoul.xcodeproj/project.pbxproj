@@ -13,6 +13,7 @@
 		CF11A43A28BFCCF200E34294 /* MainLandMarkTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11A43928BFCCF200E34294 /* MainLandMarkTable.swift */; };
 		CF17F7E128BDB621003F702B /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF17F7E028BDB621003F702B /* MainMapView.swift */; };
 		CF17F7E528BEE08B003F702B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF17F7E428BEE08B003F702B /* LocationManager.swift */; };
+		CFF6E4DC28C04F1600BDCECF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6E4DB28C04F1600BDCECF /* ImagePicker.swift */; };
 		CFF8FAC728BD95C40006005C /* TripAroundSeoulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8FAC628BD95C40006005C /* TripAroundSeoulApp.swift */; };
 		CFF8FAC928BD95C40006005C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8FAC828BD95C40006005C /* MainView.swift */; };
 		CFF8FACB28BD95C50006005C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF8FACA28BD95C50006005C /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		CF11A43928BFCCF200E34294 /* MainLandMarkTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLandMarkTable.swift; sourceTree = "<group>"; };
 		CF17F7E028BDB621003F702B /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
 		CF17F7E428BEE08B003F702B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CFF6E4DB28C04F1600BDCECF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		CFF8FAC328BD95C40006005C /* TripAroundSeoul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripAroundSeoul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF8FAC628BD95C40006005C /* TripAroundSeoulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAroundSeoulApp.swift; sourceTree = "<group>"; };
 		CFF8FAC828BD95C40006005C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 				CFF8FAC828BD95C40006005C /* MainView.swift */,
 				CF17F7E028BDB621003F702B /* MainMapView.swift */,
 				CF11A43928BFCCF200E34294 /* MainLandMarkTable.swift */,
+				CFF6E4DB28C04F1600BDCECF /* ImagePicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				CF17F7E528BEE08B003F702B /* LocationManager.swift in Sources */,
 				CF17F7E128BDB621003F702B /* MainMapView.swift in Sources */,
 				CF11A43628BF9D2E00E34294 /* LandmarkAnnotation.swift in Sources */,
+				CFF6E4DC28C04F1600BDCECF /* ImagePicker.swift in Sources */,
 				CF11A43A28BFCCF200E34294 /* MainLandMarkTable.swift in Sources */,
 				CFF8FAC928BD95C40006005C /* MainView.swift in Sources */,
 				CFF8FAC728BD95C40006005C /* TripAroundSeoulApp.swift in Sources */,
@@ -302,6 +306,7 @@
 				DEVELOPMENT_TEAM = X7H2S2S85P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "해쥬";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "해주세요";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -332,6 +337,7 @@
 				DEVELOPMENT_TEAM = X7H2S2S85P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "해쥬";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "해주세요";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

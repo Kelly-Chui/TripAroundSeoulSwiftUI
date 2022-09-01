@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 struct MainLandMarkTable: View {
-    
+
     let annotations = [
         LandmarkAnnotations(name: "63Square", coordinate: CLLocationCoordinate2D(latitude: 37.519378, longitude: 126.940211)),
         LandmarkAnnotations(name: "LotteWorldTower", coordinate: CLLocationCoordinate2D(latitude: 37.5125, longitude: 127.102778)),
@@ -21,7 +21,7 @@ struct MainLandMarkTable: View {
     
     var body: some View {
         ForEach(annotations) { blocks in
-            MainBlockView(name: blocks.name, coordinate: blocks.coordinate)
+            MainBlockView(name: blocks.name, coordinate: blocks.coordinate, libraryOrCamera: false)
         }
     }
 }
@@ -29,19 +29,38 @@ struct MainLandMarkTable: View {
 struct MainBlockView: View {
     let name: String
     let coordinate: CLLocationCoordinate2D
+
+    @State var changeImage = false
+    @State var openCameraRoll = false
+    @State var imageSelected = UIImage()
+    @State var libraryOrCamera: Bool
+    
     var body: some View {
         HStack{
             Image(name)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 20, height: 20)
+            .frame(width: 40, height: 40)
             Text(name)
             Spacer()
-            Button(action: {} ) {
+            Button(action: {
+                changeImage = true
+                openCameraRoll = true
+                libraryOrCamera = false
+            } ) {
                 Image(systemName: "camera.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 20, height: 20)
+            }
+            .sheet(isPresented: $openCameraRoll){
+                if libraryOrCamera{
+                    ImagePicker(selectedImage: $imageSelected, sourceType: .photoLibrary)
+                }
+                else {
+                    ImagePicker(selectedImage: $imageSelected, sourceType: .camera)
+                }
+                
             }
         }
         .padding([.leading, .trailing, .top])
